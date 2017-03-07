@@ -151,7 +151,7 @@ public class [className/] {
      * @param id Identificador de la instancia a eliminar
      * @generated
      */
-    @PUT
+    @DELETE
     @Path("{id: \\d+}")
     public void delete[c.name/](@PathParam("id") Long id) {
         [logic/].delete[c.name/](id);
