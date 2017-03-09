@@ -56,7 +56,7 @@
 </header>
 <form novalidate name="[c.getFormName()/]" role="form">
     <fieldset>
-        [if (c.getModel().valueOf('form')='true')]
+        [if (c.getModel().valueOf('form')<>'true')]
         <input id="id" class="form-control" type="hidden" ng-model="currentRecord.id"/>
         [for (a : Property | c.getAllAttribs())]
     <div class="form-group col-md-12" ng-class="{'has-success': [c.getFormName()/].[a.name/].$valid && [c.getFormName()/].[a.name/].$dirty, 'has-error': [c.getFormName()/].[a.name/].$invalid && [c.getFormName()/].[a.name/].$dirty}" >
