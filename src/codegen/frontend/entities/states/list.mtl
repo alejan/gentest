@@ -114,11 +114,11 @@ list
 gallery
 dataTable
 /]
-[if (c.valueOf('typeList')='list')]
+[if (c.getModel().valueOf('typeList')='list')]
 <list-records fields="model.fields" records="records" actions="recordActions"></list-records>
-[elseif (c.valueOf('typeList')='gallery')]
+[elseif (c.getModel().valueOf('typeList')='gallery')]
 <gallery fields="model.fields" records="records" actions="recordActions"></gallery>
-[elseif (c.valueOf('typeList')='dataTable')]
+[elseif (c.getModel().valueOf('typeList')='dataTable')]
 <datatable fields="model.fields" records="records" actions="recordActions" ></datatable>
 [else]
 <list-records fields="model.fields" records="records" actions="recordActions"></list-records>
