@@ -85,7 +85,7 @@
                 url: '/list',
                 parent: '[c.getMainStateName()/]',
                 views: {
-                  [if(c.isChild())]'[c.getParentAttribute().getClass().getInstanceView()/]@[c.getMainStateName()/]'[else][c.getMainView()/][/if]: {
+                  [if(c.isChild())]'[c.getParentAttribute().getClass().getInstanceView()/]@[c.getParentAttribute().getClass().getMainStateName()/]'[else][c.getMainView()/][/if]: {
                         templateUrl: basePath + 'list/[c.getName()/].list.tpl.html',
                         controller: '[c.getListCtrlName()/]',
                         controllerAs: 'ctrl'
